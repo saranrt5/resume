@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran Ravindranath | Product Manager</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- D3.js for data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">SR</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#metrics" class="nav-link">Metrics</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#data-viz" class="nav-link">Visualizations</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="bento-grid hero-grid">
+            <div class="bento-item profile-card">
+                <div class="profile-image">
+                    <!-- Placeholder for profile image -->
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Saran Ravindranath</h1>
+                    <h2>Product Manager</h2>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> San Jose, CA, USA</p>
+                </div>
+            </div>
+            <div class="bento-item summary-card">
+                <h3>Professional Summary</h3>
+                <p>Strategic Product Manager with 15+ years of experience driving end-to-end product innovation for Fortune 500 enterprises and high-growth platforms. Expert in launching AI-enabled products and global solutions that bridge technical complexity with user experience across diverse markets. Proven success leading cross-functional teams to execute product roadmaps that deliver scalable, localized experiences for both consumer and enterprise users.</p>
+                <p>Key achievements include 40% faster time-to-market delivery, $10M+ in cost efficiencies, 25%+ conversion rate improvements, and 75% risk reduction through data-driven product decisions. Experienced in global product rollouts, experimentation at scale, and leveraging advanced analytics, AI/ML integration, and Agile methodologies to transform market insights into products that scale across B2B & B2C ecosystems.</p>
+            </div>
+            <div class="bento-item contact-card">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li><a href="mailto:rtsaran.kp@gmail.com"><i class="fas fa-envelope"></i> rtsaran.kp@gmail.com</a></li>
+                    <li><a href="tel:+14794128287"><i class="fas fa-phone"></i> +1 479-412-8287</a></li>
+                    <li><a href="https://www.linkedin.com/in/saranravindranath/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Dashboard -->
+    <section id="metrics" class="section metrics-section">
+        <h2 class="section-title">Key Metrics & Impact</h2>
+        <div class="bento-grid metrics-grid">
+            <div class="bento-item metric-card" data-value="15">
+                <div class="metric-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="metric-value">$<span class="counter">0</span>M+</div>
+                <div class="metric-label">Annual Cost Savings</div>
+                <div class="metric-description">Through process automation</div>
+            </div>
+            <div class="bento-item metric-card" data-value="12">
+                <div class="metric-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="metric-value">$<span class="counter">0</span>M+</div>
+                <div class="metric-label">Revenue Growth</div>
+                <div class="metric-description">Identified omnichannel opportunities</div>
+            </div>
+            <div class="bento-item metric-card" data-value="40">
+                <div class="metric-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="metric-value"><span class="counter">0</span>%</div>
+                <div class="metric-label">Faster Time-to-Market</div>
+                <div class="metric-description">Through improved processes</div>
+            </div>
+            <div class="bento-item metric-card" data-value="25">
+                <div class="metric-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="metric-value"><span class="counter">0</span>%+</div>
+                <div class="metric-label">Conversion Rate Boost</div>
+                <div class="metric-description">Using data-driven insights</div>
+            </div>
+            <div class="bento-item metric-card" data-value="75">
+                <div class="metric-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="metric-value"><span class="counter">0</span>%</div>
+                <div class="metric-label">Risk Reduction</div>
+                <div class="metric-description">Through improved security</div>
+            </div>
+            <div class="bento-item metric-card" data-value="2">
+                <div class="metric-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="metric-value"><span class="counter">0</span>M/month</div>
+                <div class="metric-label">Transaction Volume</div>
+                <div class="metric-description">Payments processed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section id="skills" class="section skills-section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="bento-grid skills-grid">
+            <div class="bento-item skills-category">
+                <h3>Product Management</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Product Roadmap</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">User Profiling</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Requirements Gathering</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Wire Framing</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item skills-category">
+                <h3>Data & Analytics</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">A/B Testing</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Business Intelligence</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Data Analysis</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Data Driven Decision Making</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item skills-category">
+                <h3>Project Management</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Scrum Methodology</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Agile Framework</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Kanban Methodology</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Backlog Management</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item skills-category">
+                <h3>Business Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Market Research</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">User Stories</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Stakeholder Management</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Project Management</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section experience-section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline-container">
+            <div class="timeline-track"></div>
+            <div class="timeline-items">
+                <!-- Timeline items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <h2 class="section-title">Education</h2>
+        <div class="bento-grid education-grid">
+            <div class="bento-item education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Master of Business Administration | MBA</h3>
+                    <h4>Cardiff University</h4>
+                    <p class="education-period">09/2008 – 09/2009</p>
+                    <p class="education-location">Cardiff, United Kingdom</p>
+                    <ul class="education-achievements">
+                        <li>Achieved Class 1 degree upon graduation</li>
+                        <li>Spearheaded a major finance project focused on forecasting sales and cashflows for Hyundai</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bento-item education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Information Technology | Bachelor of Technology</h3>
+                    <h4>Anna University</h4>
+                    <p class="education-period">07/2004 – 05/2008</p>
+                    <p class="education-location">Chennai, India</p>
+                    <ul class="education-achievements">
+                        <li>Earned a first class degree in Information Technology</li>
+                        <li>Demonstrated proficiency in various IT concepts and technologies</li>
+                        <li>Acquired extensive knowledge in programming languages and software development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="bento-grid certifications-grid">
+            <div class="bento-item certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Certified Scrum Master</h3>
+                    <h4>Scrum Alliance</h4>
+                </div>
+            </div>
+            <div class="bento-item certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Six Sigma Green Belt</h3>
+                    <h4>ASQ</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Technologies -->
+    <section id="tools" class="section tools-section">
+        <h2 class="section-title">Tools & Technologies</h2>
+        <div class="bento-grid tools-grid">
+            <!-- Tools will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Achievements Showcase -->
+    <section id="achievements" class="section achievements-section">
+        <h2 class="section-title">Key Achievements</h2>
+        <div class="bento-grid achievements-grid">
+            <div class="bento-item achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Payment Authentication Optimization</h3>
+                    <div class="achievement-metrics">
+                        <div class="metric">
+                            <span class="metric-value">15%</span>
+                            <span class="metric-label">Reduction in Errors</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">10%</span>
+                            <span class="metric-label">Speed Increase</span>
+                        </div>
+                    </div>
+                    <p>Defined and monitored OKRs and KPIs for the e-commerce payments team, resulting in significant improvements in payment processing.</p>
+                </div>
+            </div>
+            <div class="bento-item achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Transaction Fee Optimization</h3>
+                    <div class="achievement-metrics">
+                        <div class="metric">
+                            <span class="metric-value">$1.2M</span>
+                            <span class="metric-label">Annual Savings</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">55%</span>
+                            <span class="metric-label">Chargeback Reduction</span>
+                        </div>
+                    </div>
+                    <p>Optimized authentication workflow with Worldpay, reducing transaction fees and implementing fraud detection tools while maintaining 99.9% uptime with 200 orders per minute.</p>
+                </div>
+            </div>
+            <div class="bento-item achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Shipping Consolidation</h3>
+                    <div class="achievement-metrics">
+                        <div class="metric">
+                            <span class="metric-value">500K+</span>
+                            <span class="metric-label">Orders Optimized</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">$5M</span>
+                            <span class="metric-label">Annual Savings</span>
+                        </div>
+                    </div>
+                    <p>Launched a shipping consolidation feature, optimizing over 500,000 orders and deliveries, resulting in significant cost savings.</p>
+                </div>
+            </div>
+            <div class="bento-item achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Checkout Process Redesign</h3>
+                    <div class="achievement-metrics">
+                        <div class="metric">
+                            <span class="metric-value">11%</span>
+                            <span class="metric-label">Conversion Increase</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">6%</span>
+                            <span class="metric-label">Revenue Growth</span>
+                        </div>
+                    </div>
+                    <p>Designed and implemented a single-page checkout process, improving user experience, increasing conversion rates, and boosting revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualization Containers -->
+    <section id="data-viz" class="section data-viz-section">
+        <h2 class="section-title">Skills & Metrics Visualizations</h2>
+        <div class="bento-grid viz-grid">
+            <div class="bento-item viz-card">
+                <h3>Skills Radar</h3>
+                <div id="skills-radar" class="viz-container"></div>
+            </div>
+            <div class="bento-item viz-card">
+                <h3>Key Metrics</h3>
+                <div id="metrics-chart" class="viz-container"></div>
+            </div>
+            <div class="bento-item viz-card">
+                <h3>Career Timeline</h3>
+                <div id="experience-timeline" class="viz-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Saran Ravindranath. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:rtsaran.kp@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/saranravindranath/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/visualizations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
